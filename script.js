@@ -71,7 +71,7 @@ document.getElementById('sommapesoTot').innerHTML = `Il peso totale è ${pesoTot
 
 
 
-/* jsnack-2 */
+/* jsnack-2 
 
 
 const zucchine = [
@@ -162,4 +162,15 @@ const pesoGrandi = () => {
 document.getElementById('sommaPiccole').innerHTML = `Il peso delle zucchine piccole è ${pesoPiccole()} kg`;
 document.getElementById('sommaGrandi').innerHTML = `Il peso delle zucchine grandi è ${pesoGrandi()} kg`;
 
+*/
 
+let parola = prompt('inserisci un parola');
+
+const controlloParola = (parola.includes(' ')) ? parola = prompt('inserisci UNA parola') : '' ;
+
+const giraParola= (word) => word.split('').reverse().join('');
+
+const parolaGirata = giraParola(parola);
+
+document.getElementById('parola').innerHTML =  parola;
+document.getElementById('parolaGirata').innerHTML = parolaGirata;
