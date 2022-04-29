@@ -196,16 +196,10 @@ const biciPiuLeggera = () => {
 
     const {kg, nome} = bicicletta;
 
-    if(biciLeggera === '') {
+    if(biciLeggera === '' || pesoMinore > kg) {
       biciLeggera = nome;
       pesoMinore = kg;
-    } 
-    else if(pesoMinore > kg) {
-      pesoMinore = kg;
-      biciLeggera = nome;
     }
-
-    console.log(biciLeggera);
 
   }
 
