@@ -53,7 +53,7 @@ const zucchine = [
   },
 ]
 
-const pesoTotale = () => {
+
 
   let somma = 0;
 
@@ -61,9 +61,7 @@ const pesoTotale = () => {
     somma += + parseFloat(zucchina.kg);
   };
   
-  return somma
 
-};
 
 document.getElementById('sommapesoTot').innerHTML = `Il peso totale è ${pesoTotale()} kg`;
 
@@ -135,11 +133,11 @@ for(let zucchina of zucchine){
 }
 console.log(piccole);
 
-const pesoPiccole = () => {
+const pesoZucchine = (array) => {
 
   let somma = 0;
 
-  for(let zucchina of piccole){
+  for(let zucchina of array){
     somma += + parseFloat(zucchina.kg);
   };
   
@@ -147,22 +145,11 @@ const pesoPiccole = () => {
 
 };
 
-const pesoGrandi = () => {
-
-  let somma = 0;
-
-  for(let zucchina of grandi){
-    somma += + parseFloat(zucchina.kg);
-  };
-  
-  return somma
-
-};
-
-document.getElementById('sommaPiccole').innerHTML = `Il peso delle zucchine piccole è ${pesoPiccole()} kg`;
-document.getElementById('sommaGrandi').innerHTML = `Il peso delle zucchine grandi è ${pesoGrandi()} kg`;
+document.getElementById('sommaPiccole').innerHTML = `Il peso delle zucchine piccole è ${pesoZucchine(piccole)} kg`;
+document.getElementById('sommaGrandi').innerHTML = `Il peso delle zucchine grandi è ${pesoZucchine(grandi)} kg`;
 
 */
+
 
 
 /* jsnack3
